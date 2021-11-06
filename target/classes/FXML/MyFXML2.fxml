@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="root2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600" style="-fx-background-color: LIGHTBLUE; -fx-padding: 20;" styleClass="border" stylesheets="@../styles/style2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <center>
+      <GridPane fx:id="grid" gridLinesVisible="true" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+   </center>
+   <top>
+      <MenuBar style="-fx-background-color: lightblue;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitMethod" text="Exit"  />
+            </items>
+          </Menu>
+          <Menu fx:id="Level" mnemonicParsing="false" text="Level-Comp1">
+            <items>
+              <MenuItem fx:id="Novice" mnemonicParsing="false" onAction="#Novice" text="Novice" />
+                  <MenuItem fx:id="Advanced" mnemonicParsing="false" onAction="#Advanced" text="Advanced" />
+                  <MenuItem fx:id="Expert" mnemonicParsing="false" onAction="#Expert" text="Expert" />
+            </items>
+          </Menu>
+            <Menu fx:id="Level2" mnemonicParsing="false" text="Level-Comp2">
+              <items>
+                <MenuItem fx:id="Novice2" mnemonicParsing="false" onAction="#Novice2" text="Novice" />
+                  <MenuItem fx:id="Advanced2" mnemonicParsing="false" onAction="#Advanced2" text="Advanced" />
+                  <MenuItem fx:id="Expert2" mnemonicParsing="false" onAction="#Expert2" text="Expert" />
+              </items>
+            </Menu>
+          <Menu fx:id="game" mnemonicParsing="false" text="Games">
+               <items>
+                  <MenuItem fx:id="game1" mnemonicParsing="false" onAction="#game1" text="1" />
+                  <MenuItem fx:id="game2" mnemonicParsing="false" onAction="#game2" text="2" />
+                  <MenuItem fx:id="game3" mnemonicParsing="false" onAction="#game3" text="3" />
+                  <MenuItem fx:id="game4" mnemonicParsing="false" onAction="#game4" text="4" />
+                  <MenuItem fx:id="game5" mnemonicParsing="false" onAction="#game5" text="5" />
+                  <MenuItem fx:id="game6" mnemonicParsing="false" onAction="#game6" text="6" />
+                  <MenuItem fx:id="game7" mnemonicParsing="false" onAction="#game7" text="7" />
+                  <MenuItem fx:id="game8" mnemonicParsing="false" onAction="#game8" text="8" />
+                  <MenuItem fx:id="game9" mnemonicParsing="false" onAction="#game9" text="9" />
+                  <MenuItem fx:id="game10" mnemonicParsing="false" onAction="#game10" text="10" />
+               </items>
+          </Menu>
+        </menus>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </MenuBar>
+   </top>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="9.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startGame" defaultButton="true" mnemonicParsing="false" onAction="#startGameMethod" style="-fx-background-color: lightblue;" stylesheets="@../styles/style2.css" text="Start Game!">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Button fx:id="b11" layoutX="10.0" layoutY="58.0" onAction="#resultMethod" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: lightblue;" text="View Result">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../styles/style2.css" />
+                  <URL value="@../styles/style1.css" />
+               </stylesheets>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="9.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </right>
+   <bottom>
+      <VBox prefHeight="72.0" prefWidth="560.0" spacing="9.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label" style="-fx-background-color: lightblue;" text="INSTRUCTIONS: Choose a level and the number of games to begin! ">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+            <TextField fx:id="textField" style="-fx-border-insets: 10;">
+               <font>
+                  <Font size="17.0" />
+               </font></TextField>
+         </children>
+         <padding>
+            <Insets top="9.0" />
+         </padding>
+      </VBox>
+   </bottom>
+   <padding>
+      <Insets top="5.0" />
+   </padding>
+</BorderPane>

@@ -1,0 +1,9 @@
+.button {
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+	-fx-background-color: white;
+}
+
+.border {
+	-fx-background-image: url('https://pressstart.vip/images/uploads/assets/bluemoon.png');
+}
